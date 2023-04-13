@@ -9,7 +9,3 @@
 li:hover {
   @apply cursor-pointer;
 }
-
-.lg-header-nav {
-  @apply flex gap-2 items-center;
-}
