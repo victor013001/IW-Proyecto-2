@@ -14,7 +14,7 @@ const Home: NextPage = () => (
       <link rel='icon' href='/favicon.svg' />
     </Head>
     <div className='text-3xl font-bold underline'>Proyecto 2</div>
-    <div className='flex flex-row h-20 items-center gap-24 '>
+    <div className='flex flex-row h-20 items-center gap-24'>
       <MedioPagos title='Hasta 48 cuotas' description='ver más' image='imagen'></MedioPagos>
       <MedioPagos title='Transferencia desde tu banco' description='ver más' image='imagen'></MedioPagos>
       <MedioPagos title='Paga en Efectivo' description='ver más' image='imagen'></MedioPagos>
