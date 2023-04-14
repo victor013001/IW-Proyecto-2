@@ -1,3 +1,4 @@
+import { BannerHeader } from '@components/BannerHeader';
 import { Header } from '@components/Header';
 import { ModalCart } from '@components/modals/ModalCart';
 import { CartContextProvider } from '@context/CartContext';
@@ -18,6 +19,7 @@ const Home: NextPage = () => (
     <div className='text-3xl font-bold underline'>Proyecto 2</div>
     <CartContextProvider>
       <Header />
+      <BannerHeader />
       <ModalCart />
     </CartContextProvider>
   </>

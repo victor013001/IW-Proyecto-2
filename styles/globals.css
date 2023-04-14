@@ -9,3 +9,9 @@
 li:hover {
   @apply cursor-pointer;
 }
+
+.button-selection {
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+  border: 1px solid #eeeeee;
+  @apply h-2 w-2 shadow-sm rounded border-none bg-ml-mid-black hover:bg-ml-gray;
+}
