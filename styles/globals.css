@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.debug {
+  border: 1px solid red;
+}
+
+li:hover {
+  @apply cursor-pointer;
+}
+
+.button-selection {
+  border: 1px solid;
+  @apply h-2 w-2 shadow-sm rounded bg-ml-mid-black border-white hover:bg-white hover:border-ml-mid-black;
+}
