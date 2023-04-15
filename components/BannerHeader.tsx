@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 const BannerHeader = () => (
-  <div className='debug w-screen h-32 flex-col items-center flex lg:h-80'>
-    <div className=' mb-[-35px]'>
+  <div className='w-full h-32 flex-col items-center flex lg:h-80'>
+    <div className=' mb-[-25px]'>
       <Image
         src='/Novedades-1.png'
         alt='Banner Header'
@@ -12,24 +12,24 @@ const BannerHeader = () => (
       />
     </div>
     <div>
-      <ul className='flex list-none gap-1 h-2 justify-center'>
+      <ul className='flex list-none gap-2 h-2 justify-center'>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
         <li>
-          <button type='button' className='button-selection'></button>
+          <button type='button' className='button-selection' />
         </li>
       </ul>
     </div>
