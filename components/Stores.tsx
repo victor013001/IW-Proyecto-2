@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Stores = () => (
-  <div className='flex w-screen justify-center items-center'>
+  <section className='flex w-screen justify-center items-center'>
     <div className='hidden lg:flex gap-3'>
       <Store0 />
       <Store1 />
@@ -12,7 +12,7 @@ const Stores = () => (
     <div className='flex lg:hidden'>
       <CardsCarousel />
     </div>
-  </div>
+  </section>
 );
 
 interface ImageProp {
