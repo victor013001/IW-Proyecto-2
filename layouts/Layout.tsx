@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => (
   <>
     <Header />
-    <main>{children}</main>
+    <main className='flex flex-col gap-7'>{children}</main>
     <Footer />
   </>
 );
