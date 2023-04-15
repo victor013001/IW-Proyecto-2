@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 const Footer = () => (
-  <footer className='flex justify-center px-6 py-3'>
-    <div className='flex flex-col w-[1000px] gap-[1px] bg-ml-gray-light'>
+  <footer className='flex justify-center px-6 py-3 bg-white'>
+    <div className='flex flex-col gap-[1px] bg-ml-gray-light'>
       <div className='flex flex-col gap-3 bg-white items-center lg:items-start'>
-        <div className='flex flex-col items-center  gap-6 pt-[15px] lg:flex-row'>
+        <div className='grid grid-cols-2 items-center  gap-6 pt-[15px] lg:flex lg:flex-row'>
           <span className='span-footer'>Trabaja con nosotros</span>
           <span className='span-footer'>Términos y condiciones</span>
           <span className='span-footer'>Cómo cuidamos tu privacidad</span>
