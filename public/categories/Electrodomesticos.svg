@@ -1,0 +1,44 @@
+<svg
+  width="45"
+  height="46"
+  viewBox="0 0 45 46"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M44.5 0.875H0.5V44.875H44.5V0.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M37.5 16.875H7.5V37.875H37.5V16.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M28.5 24.875V26.875H16.5V24.875"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M22.5 10.875C23.6046 10.875 24.5 9.97957 24.5 8.875C24.5 7.77043 23.6046 6.875 22.5 6.875C21.3954 6.875 20.5 7.77043 20.5 8.875C20.5 9.97957 21.3954 10.875 22.5 10.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M9.5 10.875C10.6046 10.875 11.5 9.97957 11.5 8.875C11.5 7.77043 10.6046 6.875 9.5 6.875C8.39543 6.875 7.5 7.77043 7.5 8.875C7.5 9.97957 8.39543 10.875 9.5 10.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M35.5 10.875C36.6046 10.875 37.5 9.97957 37.5 8.875C37.5 7.77043 36.6046 6.875 35.5 6.875C34.3954 6.875 33.5 7.77043 33.5 8.875C33.5 9.97957 34.3954 10.875 35.5 10.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+</svg>
