@@ -32,7 +32,7 @@ const Store = ({ title, children }: StoreProp) => {
     <div className='flex flex-col w-60 h-80 lg:h-[300px] bg-white gap-5 rounded'>
       <div className=' mb-[-50px]'>{childrenArray[0]}</div>
 
-      <div className='ml-24'>{childrenArray[1]}</div>
+      <div className='ml-[90px]'>{childrenArray[1]}</div>
 
       <div className='flex justify-center items-center'>
         <span className=' font-semibold text-2xl text-ml-black'>{title}</span>
