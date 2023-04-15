@@ -12,7 +12,7 @@ li:hover {
 
 .button-selection {
   border: 1px solid;
-  @apply h-2 w-2 shadow-sm rounded bg-ml-mid-black border-white hover:bg-white hover:border-ml-mid-black;
+  @apply h-3 w-3 shadow-sm rounded-full bg-ml-mid-black border-white hover:bg-white hover:border-ml-mid-black;
 }
 
 .span-footer {
