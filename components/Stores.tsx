@@ -3,16 +3,30 @@ import React, { useState } from 'react';
 
 const Stores = () => (
   <section className='flex w-screen justify-center items-center'>
-    <div className='hidden lg:flex gap-3'>
-      <Store0 />
-      <Store1 />
-      <Store2 />
-      <Store3 />
-    </div>
-    <div className='flex lg:hidden'>
-      <CardsCarousel />
+    <div className='flex flex-col gap-5'>
+      <Title />
+      <div className='hidden lg:flex gap-3'>
+        <Store0 />
+        <Store1 />
+        <Store2 />
+        <Store3 />
+      </div>
+      <div className='flex lg:hidden'>
+        <CardsCarousel />
+      </div>
     </div>
   </section>
+);
+
+const Title = () => (
+  <div className='flex flex-col gap-1 items-baseline justify-start lg:flex-row lg:gap-5'>
+    <span className=' text-base font-semibold lg:text-2xl lg:font-normal text-ml-black-light'>
+      Las mejores tiendas te esperan
+    </span>
+    <a className='text-sm text-ml-blue cursor-pointer hover:text-blue-600'>
+      Ver todas
+    </a>
+  </div>
 );
 
 interface ImageProp {
