@@ -99,10 +99,10 @@ const Carousel = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-between w-screen'>
+    <div className='flex flex-col items-center justify-between'>
       <div className=''>{infoCards()}</div>
       <div>
-        <ul className='flex list-none w-screen justify-center gap-2'>
+        <ul className='flex list-none justify-center gap-2'>
           <li>
             <button
               type='button'

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const BannerHeader = () => (
-  <div className='w-screen h-32 flex-col items-center flex lg:h-80'>
+  <div className='w-full h-32 flex-col items-center flex lg:h-80'>
     <div className=' mb-[-25px]'>
       <Image
         src='/Novedades-1.png'
@@ -12,7 +12,7 @@ const BannerHeader = () => (
       />
     </div>
     <div>
-      <ul className='flex list-none gap-2 h-2 justify-center w-screen'>
+      <ul className='flex list-none gap-2 h-2 justify-center'>
         <li>
           <button type='button' className='button-selection' />
         </li>
