@@ -14,3 +14,11 @@ li:hover {
   border: 1px solid;
   @apply h-2 w-2 shadow-sm rounded bg-ml-mid-black border-white hover:bg-white hover:border-ml-mid-black;
 }
+
+.span-footer {
+  @apply text-xs text-black;
+}
+
+.span-footer-secondary {
+  @apply text-[11px] text-ml-gray;
+}

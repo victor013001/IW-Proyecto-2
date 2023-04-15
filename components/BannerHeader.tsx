@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const BannerHeader = () => (
-  <div className='debug w-screen h-32 flex-col items-center flex lg:h-80'>
+  <div className='w-screen h-32 flex-col items-center flex lg:h-80'>
     <div className=' mb-[-35px]'>
       <Image
         src='/Novedades-1.png'
