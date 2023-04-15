@@ -29,15 +29,19 @@ const InfoCard = ({
   description,
   seeMoreText,
 }: InfoCardProps) => (
-  <div className='w-[400px] h-[250px] px-12 gap-6 flex flex-col items-center'>
+  <div className='w-80 h-[270px] px-8 gap-4 flex flex-col items-center lg:w-[340px] lg:h-[250px]'>
     <div className='h-[56px]'>{children}</div>
 
-    <div className='flex flex-col gap-3 items-center justify-center'>
-      <span className=' text-xl font-medium text-ml-mid-black text-center'>
+    <div className='flex flex-col gap-2.5 items-center justify-center'>
+      <span className='text-[19px] font-medium text-ml-mid-black text-center'>
         {title}
       </span>
-      <span className='text-center text-base text-ml-gray'>{description}</span>
-      <span className='text-ml-blue text-sm text-center'>{seeMoreText}</span>
+      <span className='text-center text- text-[15px] text-ml-gray'>
+        {description}
+      </span>
+      <span className='text-ml-blue text-[13px] text-center'>
+        {seeMoreText}
+      </span>
     </div>
   </div>
 );
@@ -56,7 +60,7 @@ const InfoCard0 = () => (
         ¡Y siempre es seguro!'
     seeMoreText='Cómo pagar con Mercado Pago'
   >
-    <Image src='/box.svg' alt='card' width={56} height={40} />
+    <Image src='/card.svg' alt='card' width={56} height={40} />
   </InfoCard>
 );
 
@@ -67,7 +71,7 @@ const InfoCard1 = () => (
           miles de productos seleccionados.'
     seeMoreText='Conoce más sobre este beneficio'
   >
-    <Image src='/card.svg' alt='card' width={56} height={40} />
+    <Image src='/box.svg' alt='card' width={56} height={40} />
   </InfoCard>
 );
 
