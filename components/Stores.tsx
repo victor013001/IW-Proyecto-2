@@ -1,12 +1,17 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Stores = () => (
-  <div className='flex w-screen justify-center items-center gap-4 '>
-    <Store0 />
-    <Store1 />
-    <Store2 />
-    <Store3 />
+  <div className='flex w-screen justify-center items-center'>
+    <div className='hidden lg:flex gap-3'>
+      <Store0 />
+      <Store1 />
+      <Store2 />
+      <Store3 />
+    </div>
+    <div className='flex lg:hidden'>
+      <CardsCarousel />
+    </div>
   </div>
 );
 
@@ -24,8 +29,8 @@ const Store = ({ title, children }: StoreProp) => {
   const childrenArray = React.Children.toArray(children);
 
   return (
-    <div className='flex flex-col w-72 h-[340px] bg-white gap-5 rounded'>
-      <div className=' mb-[-70px]'>{childrenArray[0]}</div>
+    <div className='flex flex-col w-60 h-80 lg:h-[300px] bg-white gap-5 rounded'>
+      <div className=' mb-[-50px]'>{childrenArray[0]}</div>
 
       <div className='ml-24'>{childrenArray[1]}</div>
 
@@ -38,24 +43,24 @@ const Store = ({ title, children }: StoreProp) => {
         {childrenArray[4]}
       </div>
       <div className='flex justify-center items-center'>
-        <span className=' text-base font-semibold text-ml-gray'>
+        <a className=' text-base font-semibold text-ml-gray cursor-pointer'>
           Ver tienda
-        </span>
+        </a>
       </div>
     </div>
   );
 };
 
 const BannerStoreImage = ({ src, alt }: ImageProp) => (
-  <Image src={src} alt={alt} width={288} height={95} className=' rounded-t' />
+  <Image src={src} alt={alt} width={256} height={95} className=' rounded-t' />
 );
 
 const StoreImage = ({ src, alt }: ImageProp) => (
   <Image
     src={src}
     alt={alt}
-    width={80}
-    height={80}
+    width={60}
+    height={60}
     className='rounded-lg shadow-md'
   />
 );
@@ -64,8 +69,8 @@ const ItemStoreImage = ({ src, alt }: ImageProp) => (
   <Image
     src={src}
     alt={alt}
-    width={80}
-    height={80}
+    width={60}
+    height={60}
     className='rounded-lg border-solid border-ml-gray-light border-2'
   />
 );
@@ -109,5 +114,62 @@ const Store3 = () => (
     <ItemStoreImage src='/Tiendas-4-item-3.png' alt='Item 3' />
   </Store>
 );
+
+const CardsCarousel = () => {
+  const [index, setIndex] = useState(0);
+
+  const storeCards = () => {
+    switch (index) {
+      case 0:
+        return <Store0 />;
+      case 1:
+        return <Store1 />;
+      case 2:
+        return <Store2 />;
+      case 3:
+        return <Store3 />;
+      default:
+        return <></>;
+    }
+  };
+
+  return (
+    <div className='flex flex-col items-center justify-between'>
+      <div className=''>{storeCards()}</div>
+      <div className='mt-[-28px] bg-gray-100 rounded-lg '>
+        <ul className='flex list-none justify-center gap-2'>
+          <li>
+            <button
+              type='button'
+              className='button-selection'
+              onClick={() => setIndex(0)}
+            />
+          </li>
+          <li>
+            <button
+              type='button'
+              className='button-selection'
+              onClick={() => setIndex(1)}
+            />
+          </li>
+          <li>
+            <button
+              type='button'
+              className='button-selection'
+              onClick={() => setIndex(2)}
+            />
+          </li>
+          <li>
+            <button
+              type='button'
+              className='button-selection'
+              onClick={() => setIndex(3)}
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 export { Stores };

@@ -21,7 +21,7 @@ const Home: NextPage = () => (
     <CartContextProvider>
       <Layout>
         <BannerHeader />
-
+        <Stores />
         <ShoppingInfo />
       </Layout>
       <ModalCart />
