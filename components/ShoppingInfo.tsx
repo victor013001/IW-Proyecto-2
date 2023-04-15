@@ -48,7 +48,12 @@ const InfoCard = ({
 
 const Separator = () => (
   <div className='flex h-full  items-center'>
-    <Image src='/separator.svg' alt='separator' width={1} height={65} />
+    <Image
+      src='/shoppingInfo/separator.svg'
+      alt='separator'
+      width={1}
+      height={65}
+    />
   </div>
 );
 
@@ -60,7 +65,7 @@ const InfoCard0 = () => (
         ¡Y siempre es seguro!'
     seeMoreText='Cómo pagar con Mercado Pago'
   >
-    <Image src='/card.svg' alt='card' width={56} height={40} />
+    <Image src='/shoppingInfo/card.svg' alt='card' width={56} height={40} />
   </InfoCard>
 );
 
@@ -71,7 +76,7 @@ const InfoCard1 = () => (
           miles de productos seleccionados.'
     seeMoreText='Conoce más sobre este beneficio'
   >
-    <Image src='/box.svg' alt='card' width={56} height={40} />
+    <Image src='/shoppingInfo/box.svg' alt='card' width={56} height={40} />
   </InfoCard>
 );
 
@@ -82,7 +87,7 @@ const InfoCard2 = () => (
           hacer, porque estás siempre protegido.'
     seeMoreText='Cómo te protegemos'
   >
-    <Image src='/security.svg' alt='card' width={56} height={40} />
+    <Image src='/shoppingInfo/security.svg' alt='card' width={56} height={40} />
   </InfoCard>
 );
 

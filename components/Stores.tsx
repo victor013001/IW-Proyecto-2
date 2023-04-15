@@ -3,16 +3,30 @@ import React, { useState } from 'react';
 
 const Stores = () => (
   <section className='flex w-screen justify-center items-center'>
-    <div className='hidden lg:flex gap-3'>
-      <Store0 />
-      <Store1 />
-      <Store2 />
-      <Store3 />
-    </div>
-    <div className='flex lg:hidden'>
-      <CardsCarousel />
+    <div className='flex flex-col gap-5'>
+      <Title />
+      <div className='hidden lg:flex gap-3'>
+        <Store0 />
+        <Store1 />
+        <Store2 />
+        <Store3 />
+      </div>
+      <div className='flex lg:hidden'>
+        <CardsCarousel />
+      </div>
     </div>
   </section>
+);
+
+const Title = () => (
+  <div className='flex flex-col gap-1 items-baseline justify-start lg:flex-row lg:gap-5'>
+    <span className=' text-base font-semibold lg:text-2xl lg:font-normal text-ml-black-light'>
+      Las mejores tiendas te esperan
+    </span>
+    <a className='text-sm text-ml-blue cursor-pointer hover:text-blue-600'>
+      Ver todas
+    </a>
+  </div>
 );
 
 interface ImageProp {
@@ -77,41 +91,41 @@ const ItemStoreImage = ({ src, alt }: ImageProp) => (
 
 const Store0 = () => (
   <Store title='Lego'>
-    <BannerStoreImage src='/Tiendas-1.png' alt='Tiendas 1' />
-    <StoreImage src='/Tiendas-1-1.png' alt='Tiendas 1' />
-    <ItemStoreImage src='/Tiendas-1-item-1.png' alt='Item 1' />
-    <ItemStoreImage src='/Tiendas-1-item-2.png' alt='Item 2' />
-    <ItemStoreImage src='/Tiendas-1-item-3.png' alt='Item 3' />
+    <BannerStoreImage src='/stores/Tiendas-1.png' alt='Tiendas 1' />
+    <StoreImage src='/stores/Tiendas-1-1.png' alt='Tiendas 1' />
+    <ItemStoreImage src='/stores/Tiendas-1-item-1.png' alt='Item 1' />
+    <ItemStoreImage src='/stores/Tiendas-1-item-2.png' alt='Item 2' />
+    <ItemStoreImage src='/stores/Tiendas-1-item-3.png' alt='Item 3' />
   </Store>
 );
 
 const Store1 = () => (
   <Store title='Xiaomi'>
-    <BannerStoreImage src='/Tiendas-2.png' alt='Tiendas 1' />
-    <StoreImage src='/Tiendas-2-2.png' alt='Tiendas 1' />
-    <ItemStoreImage src='/Tiendas-2-item-1.png' alt='Item 1' />
-    <ItemStoreImage src='/Tiendas-2-item-2.png' alt='Item 2' />
-    <ItemStoreImage src='/Tiendas-2-item-3.png' alt='Item 3' />
+    <BannerStoreImage src='/stores/Tiendas-2.png' alt='Tiendas 1' />
+    <StoreImage src='/stores/Tiendas-2-2.png' alt='Tiendas 1' />
+    <ItemStoreImage src='/stores/Tiendas-2-item-1.png' alt='Item 1' />
+    <ItemStoreImage src='/stores/Tiendas-2-item-2.png' alt='Item 2' />
+    <ItemStoreImage src='/stores/Tiendas-2-item-3.png' alt='Item 3' />
   </Store>
 );
 
 const Store2 = () => (
   <Store title='Oster'>
-    <BannerStoreImage src='/Tiendas-3.png' alt='Tiendas 1' />
-    <StoreImage src='/Tiendas-3-3.png' alt='Tiendas 1' />
-    <ItemStoreImage src='/Tiendas-3-item-1.png' alt='Item 1' />
-    <ItemStoreImage src='/Tiendas-3-item-2.png' alt='Item 2' />
-    <ItemStoreImage src='/Tiendas-3-item-3.png' alt='Item 3' />
+    <BannerStoreImage src='/stores/Tiendas-3.png' alt='Tiendas 1' />
+    <StoreImage src='/stores/Tiendas-3-3.png' alt='Tiendas 1' />
+    <ItemStoreImage src='/stores/Tiendas-3-item-1.png' alt='Item 1' />
+    <ItemStoreImage src='/stores/Tiendas-3-item-2.png' alt='Item 2' />
+    <ItemStoreImage src='/stores/Tiendas-3-item-3.png' alt='Item 3' />
   </Store>
 );
 
 const Store3 = () => (
   <Store title='Nikon'>
-    <BannerStoreImage src='/Tiendas-4.png' alt='Tiendas 1' />
-    <StoreImage src='/Tiendas-4-4.png' alt='Tiendas 1' />
-    <ItemStoreImage src='/Tiendas-4-item-1.png' alt='Item 1' />
-    <ItemStoreImage src='/Tiendas-4-item-2.png' alt='Item 2' />
-    <ItemStoreImage src='/Tiendas-4-item-3.png' alt='Item 3' />
+    <BannerStoreImage src='/stores/Tiendas-4.png' alt='Tiendas 1' />
+    <StoreImage src='/stores/Tiendas-4-4.png' alt='Tiendas 1' />
+    <ItemStoreImage src='/stores/Tiendas-4-item-1.png' alt='Item 1' />
+    <ItemStoreImage src='/stores/Tiendas-4-item-2.png' alt='Item 2' />
+    <ItemStoreImage src='/stores/Tiendas-4-item-3.png' alt='Item 3' />
   </Store>
 );
 
