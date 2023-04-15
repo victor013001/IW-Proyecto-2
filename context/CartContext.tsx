@@ -26,7 +26,7 @@ const CartContext = createContext<CartContextProps>({} as CartContextProps);
 export const useCartContext = () => useContext(CartContext);
 
 interface CartContextProviderProps {
-  children: JSX.Element;
+  children: JSX.Element[];
 }
 
 const CartContextProvider = ({ children }: CartContextProviderProps) => {

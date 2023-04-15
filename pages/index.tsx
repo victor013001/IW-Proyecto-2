@@ -1,5 +1,6 @@
 import { BannerHeader } from '@components/BannerHeader';
 import { ShoppingInfo } from '@components/ShoppingInfo';
+import { ModalCart } from '@components/modals/ModalCart';
 import { CartContextProvider } from '@context/CartContext';
 import { Layout } from '@layouts/Layout';
 import { NextPage } from 'next';
@@ -21,6 +22,7 @@ const Home: NextPage = () => (
         <BannerHeader />
         <ShoppingInfo />
       </Layout>
+      <ModalCart />
     </CartContextProvider>
   </>
 );
