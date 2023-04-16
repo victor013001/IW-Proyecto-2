@@ -1,5 +1,5 @@
-import {MedioPagoTarjeta} from '@components/MedioPagoTarjeta';
-import {MedioPagos} from '@components/MedioPagos';
+import MedioPagoTarjeta from '@components/MedioPagoTarjeta';
+import MedioPagos from '@components/MedioPagos';
 import { BannerHeader } from '@components/BannerHeader';
 import { Categories } from '@components/Categories';
 import { ShoppingInfo } from '@components/ShoppingInfo';
