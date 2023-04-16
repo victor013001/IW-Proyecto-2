@@ -1,3 +1,5 @@
+import MedioPagoTarjeta from '@components/MedioPagoTarjeta';
+import MedioPagos from '@components/MedioPagos';
 import { BannerHeader } from '@components/BannerHeader';
 import { Categories } from '@components/Categories';
 import { ShoppingInfo } from '@components/ShoppingInfo';
@@ -22,6 +24,14 @@ const Home: NextPage = () => (
     <CartContextProvider>
       <Layout>
         <BannerHeader />
+        <div className='w-{1184} m-14 p-5'>
+          <div className='flex flex-row h-20 justify-between'>
+            <MedioPagoTarjeta title='Hasta 48 cuotas' description='ver más' image='/media/credit-card.png'></MedioPagoTarjeta>
+            <MedioPagos title='Transferencia desde tu banco' description='ver más' image='/media/transfer.png'></MedioPagos>
+            <MedioPagos title='Paga en Efectivo' description='ver más' image='/media/payment-agreement.png'></MedioPagos>
+            <MedioPagos title='Más medios de pago' description='ver todos' image='/media/view-more.png'></MedioPagos>
+          </div>
+        </div>
         <Stores />
         <Categories />
         <ShoppingInfo />
