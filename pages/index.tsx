@@ -1,4 +1,4 @@
-import DisneySuscribe from '@components/DisneySuscribe';
+import {DisneySuscribe} from '@components/DisneySuscribe';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
