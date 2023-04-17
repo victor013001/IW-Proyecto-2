@@ -6,6 +6,14 @@
   border: 1px solid red;
 }
 
+th {
+  @apply text-center p-1 border-b-2 border-ml-gray-bg;
+}
+
+td {
+  @apply text-center p-4 border-b-2 border-ml-gray-bg;
+}
+
 li:hover {
   @apply cursor-pointer;
 }

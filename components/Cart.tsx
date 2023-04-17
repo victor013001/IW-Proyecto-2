@@ -2,17 +2,14 @@ import { useCartContext } from '@context/CartContext';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Cart = () => {
-  const {
-    setOpenCart,
-    cartItems,
-    setCartItems,
-    numberOfItemsInCart,
-    setNumberOfItemsInCart,
-  } = useCartContext();
+  const { setOpenCart, numberOfItemsInCart, addToCart } = useCartContext();
 
   function addToCartTest() {
-    setCartItems([...cartItems, { name: 'Item', price: 1, quantity: 1 }]);
-    setNumberOfItemsInCart(numberOfItemsInCart + 1);
+    addToCart({
+      name: 'Telefono 3',
+      price: 100000,
+      quantity: 1,
+    });
     setOpenCart(true);
   }
   return (
