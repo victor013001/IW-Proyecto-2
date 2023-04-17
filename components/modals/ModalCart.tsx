@@ -24,7 +24,7 @@ const ModalCart = () => {
 
   const deleteAllItems = () => {
     deleteAllItemsFromCart();
-    toast.success('Carrito vaciado', {
+    toast.success('Todos los productos eliminados del carrito', {
       position: 'bottom-center',
       autoClose: 2500,
       theme: 'dark',
