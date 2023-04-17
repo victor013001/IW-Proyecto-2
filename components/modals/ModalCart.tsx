@@ -1,6 +1,7 @@
 import { useCartContext } from '@context/CartContext';
 import { Modal } from './Modal';
 import { AiFillDelete } from 'react-icons/ai';
+import { toast } from 'react-toastify';
 
 const ModalCart = () => {
   const {
@@ -11,6 +12,24 @@ const ModalCart = () => {
     deleteAllItemsFromCart,
     deleteItemFromCart,
   } = useCartContext();
+
+  const deleteItem = (index: number) => {
+    deleteItemFromCart(index);
+    toast.success('Producto eliminado del carrito', {
+      position: 'bottom-center',
+      autoClose: 2500,
+      theme: 'dark',
+    });
+  };
+
+  const deleteAllItems = () => {
+    deleteAllItemsFromCart();
+    toast.success('Carrito vaciado', {
+      position: 'bottom-center',
+      autoClose: 2500,
+      theme: 'dark',
+    });
+  };
 
   return (
     <Modal
@@ -35,7 +54,7 @@ const ModalCart = () => {
                   <button
                     type='button'
                     className=' bg-ml-gray-bg hover:bg-ml-gray p-1'
-                    onClick={() => deleteItemFromCart(cartItems.indexOf(item))}
+                    onClick={() => deleteItem(cartItems.indexOf(item))}
                   >
                     <AiFillDelete className=' text-lg text-red-600 hover:text-red-300' />
                   </button>
@@ -51,7 +70,7 @@ const ModalCart = () => {
           <button
             type='button'
             className=' bg-red-300 p-2 rounded-lg font-bold hover:bg-red-500'
-            onClick={() => deleteAllItemsFromCart()}
+            onClick={() => deleteAllItems()}
           >
             Vaciar carrito
           </button>
