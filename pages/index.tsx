@@ -1,3 +1,4 @@
+import {DisneySuscribe} from '@components/DisneySuscribe';
 import MedioPagoTarjeta from '@components/MedioPagoTarjeta';
 import MedioPagos from '@components/MedioPagos';
 import { BannerHeader } from '@components/BannerHeader';
@@ -32,6 +33,7 @@ const Home: NextPage = () => (
             <MedioPagos title='Más medios de pago' description='ver todos' image='/media/view-more.png'></MedioPagos>
           </div>
         </div>
+        <DisneySuscribe></DisneySuscribe>
         <Stores />
         <Categories />
         <ShoppingInfo />
