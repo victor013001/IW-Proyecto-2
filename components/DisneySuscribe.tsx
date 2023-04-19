@@ -1,3 +1,5 @@
+import { Button } from "@mui/material"
+
 const DisneySuscribe = () => {
   return (
     <section className='border w-[1180px] h-{340} justify-center items-center ml-16 mt-14'>
@@ -34,8 +36,8 @@ const DisneySuscribe = () => {
           
         </div>
       </div>
-      <div className='border items-end h-20 '>
-        <button>Suscribete</button> 
+      <div className='flex flex-row justify-end items-center mr-4 mb-3 h-20'>
+        <Button variant="contained">Suscribete</Button>
       </div>
     </section>
   )
