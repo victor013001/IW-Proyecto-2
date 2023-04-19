@@ -2,8 +2,8 @@ import { Button } from "@mui/material"
 
 const DisneySuscribe = () => {
   return (
-    <section className='border w-[1180px] h-{340} justify-center items-center ml-16 mt-14'>
-      <div className='flex flex-row h-20 items-center justify-between header-sub-color'>
+    <section className='border md:w-[1180px] h-{340} justify-center items-center md:ml-16 mt-14 sm:w-[100px], m-1'>
+      <div className='flex flex-row h-20 items-center justify-between header-sub-color '>
         <div className="text-white text-lg">
           <span className='m-6 font-bold'>Suscríbete al nivel 6 </span>
         </div>
@@ -24,11 +24,11 @@ const DisneySuscribe = () => {
         <img src='./disney+.png'/>
           <span>Disney+ sin cargo</span>
         </div>
-        <div className='w-[377px] gap-4 flex flex-row justify-center items-center'>
+        <div className='hidden w-[377px] gap-4 md:flex flex-row justify-center items-center'>
           <img src='./star.png'/>
           <span>Star+ sin cargo</span>
         </div>
-        <div className='flex flex-row gap-5'>
+        <div className='hidden md:flex flex-row gap-5'>
         <img src='./camion.png'/>
           <div className="">
             <span>Envíos gratis y rápidos desde $ 90.000 y 40% OFF en envíos de menos de $ 90.000</span>
