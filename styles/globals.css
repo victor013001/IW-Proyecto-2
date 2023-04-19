@@ -2,7 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .header-sub-color{
     background:linear-gradient(to right, #A90F90, #0c1a51);
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+th {
+  @apply text-center p-1 border-b-2 border-ml-gray-bg;
+}
+
+td {
+  @apply text-center p-4 border-b-2 border-ml-gray-bg;
+}
+
+li:hover {
+  @apply cursor-pointer;
+}
+
+.button-selection {
+  border: 1px solid;
+  @apply h-3 w-3 shadow-sm rounded-full bg-ml-mid-black border-white hover:bg-white hover:border-ml-mid-black;
+}
+
+.span-footer {
+  @apply text-xs text-black;
+}
+
+.span-footer-secondary {
+  @apply text-[11px] text-ml-gray;
 }
