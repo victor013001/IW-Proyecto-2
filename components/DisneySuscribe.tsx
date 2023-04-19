@@ -3,14 +3,14 @@ import { Button } from "@mui/material"
 const DisneySuscribe = () => {
   return (
     <section className='border w-[1180px] h-{340} justify-center items-center ml-16 mt-14'>
-      <div className='flex flex-row h-20 items-center justify-between bg-gradient-to-r from-cyan-500 to-black-500'>
-        <div>
+      <div className='flex flex-row h-20 items-center justify-between header-sub-color'>
+        <div className="text-white text-lg">
           <span className='m-6 font-bold'>Suscríbete al nivel 6 </span>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col text-white'>
           <span className='text-sm line-through'>$56.690</span>
           <div>
-            <span className='text-base font-bold '>$17.000</span>
+            <span className='text-lg font-bold '>$17.000</span>
             <span className='text-sm mr-6'>/mes</span>
           </div>
           

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.header-sub-color{
+    background:linear-gradient(to right, #A90F90, #0c1a51);
+}
