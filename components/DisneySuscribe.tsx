@@ -2,10 +2,11 @@ import { Button } from "@mui/material"
 
 const DisneySuscribe = () => {
   return (
-    <section className='border md:w-[1180px] h-{340} justify-center items-center md:ml-16 mt-14 sm:w-[100px], m-1'>
-      <div className='flex flex-row h-20 items-center justify-between header-sub-color '>
+    <section className="flex justify-center items-center bg-white">
+    <div className='items-center w-[1184px] h-[340px] rounded-md'>
+      <div className=' flex flex-row justify-between items-center h-[87px] header-sub-color'>
         <div className="text-white text-lg">
-          <span className='m-6 font-bold'>Suscríbete al nivel 6 </span>
+          <span className='m-12 font-bold lg:m-6'>Suscríbete al nivel 6 </span>
         </div>
         <div className='flex flex-col text-white'>
           <span className='text-sm line-through'>$56.690</span>
@@ -16,7 +17,7 @@ const DisneySuscribe = () => {
           
         </div> 
       </div>
-      <div className='items-center h-16 m-4'>
+      <div className='items-center h-16 m-12 lg:m-4'>
         <span>Consigue los mejores beneficios de Mercado Libre</span>
       </div>
       <div className='flex flex-row justify-between items-center gap-48 m-4'>
@@ -39,6 +40,7 @@ const DisneySuscribe = () => {
       <div className='flex flex-row justify-end items-center mr-4 mb-3 h-20'>
         <Button variant="contained">Suscribete</Button>
       </div>
+    </div>      
     </section>
   )
 }
