@@ -8,41 +8,9 @@ import { Stores } from '@components/Stores';
 import { ModalCart } from '@components/modals/ModalCart';
 import { CartContextProvider } from '@context/CartContext';
 import { Layout } from '@layouts/Layout';
-import { CardBeneficions } from '@components/cardBeneficions';
+import { Beneficios } from '@components/Beneficios';
 import { NextPage } from 'next';
 import Head from 'next/head';
-
-const cardBeneficiosInfo = {
-  cards: [
-    {
-      backImage: '/media/homero.png',
-      backName: 'películas-disney+star+',
-      forwardImage: '/media/disney-star.png',
-      forwardName: 'disney+',
-      text1: '',
-      text2: 'Sin cargo con el nivel 6',
-      text3: 'Disney+ y Star+',
-    },
-    {
-      backImage: '/media/hbo.png',
-      backName: 'películas-hbo-max',
-      forwardImage: '/media/hbo-max.png',
-      forwardName: 'hbo-max',
-      text1: '7 DÍAS GRATIS',
-      text2: 'Hasta 50% OFF',
-      text3: 'HBO Max',
-    },
-    {
-      backImage: '/media/tom.png',
-      backName: 'películas-paramount+',
-      forwardImage: '/media/paramount.png',
-      forwardName: 'paramount+',
-      text1: '7 DÍAS GRATIS',
-      text2: 'Hasta 50% OFF',
-      text3: 'Paramount+',
-    },
-  ],
-};
 
 const Home: NextPage = () => (
   <>
@@ -83,32 +51,7 @@ const Home: NextPage = () => (
           </div>
         </div>
         <DisneySuscribe></DisneySuscribe>
-        <section className='flex w-screen justify-center items-center'>
-          <div className='w-[320px] lg:w-[1024px] flex flex-col gap-[22px]'>
-            <div className='flex gap-[25px] pt-10 pl-2'>
-              <span className='font-sans text-2xl text-ml-gray'>
-                Beneficios de Mercado Puntos
-              </span>
-              <span className='font-sans text-sm text-ml-blue pt-[10px]'>
-                Ver todos los beneficios
-              </span>
-            </div>
-            <div className='flex gap-4 pr-2 pl-2 flex-col lg:flex-row'>
-              {cardBeneficiosInfo.cards.map((card, index) => (
-                <CardBeneficions
-                  key={`${card.forwardName}_${index}`}
-                  backImage={card.backImage}
-                  backName={card.backName}
-                  forwardImage={card.forwardImage}
-                  forwardName={card.forwardName}
-                  text1={card.text1}
-                  text2={card.text2}
-                  text3={card.text3}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+        <Beneficios />
         <Stores />
         <Categories />
         <ShoppingInfo />

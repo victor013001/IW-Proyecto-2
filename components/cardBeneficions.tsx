@@ -9,8 +9,7 @@ interface CardBeneficionsProps{
   text2: string;
   text3: string;
 }
-const CardBeneficions = ({backImage, backName, forwardName, forwardImage, text1, text2, text3}: CardBeneficionsProps) => {
-  return (
+const CardBeneficions = ({backImage, backName, forwardName, forwardImage, text1, text2, text3}: CardBeneficionsProps) => (
     <>
       <div className='relative h-[206px] w-[315px]'>
         <Image
@@ -31,7 +30,6 @@ const CardBeneficions = ({backImage, backName, forwardName, forwardImage, text1,
       </div>
     </>
   );
-};
 
 
 
