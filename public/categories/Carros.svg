@@ -1,0 +1,49 @@
+<svg
+  width="45"
+  height="40"
+  viewBox='0 0 45 40'
+  fill='none'
+  xmlns='http://www.w3.org/2000/svg'
+>
+  <path
+    d='M40.5 15.875L38.731 2.611C38.599 1.617 37.751 0.875 36.749 0.875H8.251C7.249 0.875 6.401 1.617 6.269 2.611L4.5 15.875'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+  />
+  <path
+    d='M12.5 32.875V38.875H3.5V32.875'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+  <path
+    d='M41.5 32.875V38.875H32.5V32.875'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+  <path
+    d='M44.5 32.875H0.5V22.278C0.5 21.37 0.809 20.488 1.377 19.779L4.5 15.875H40.5L43.623 19.779C44.191 20.489 44.5 21.37 44.5 22.278V32.875Z'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+  <path
+    d='M36.5 27.875C38.1569 27.875 39.5 26.5319 39.5 24.875C39.5 23.2181 38.1569 21.875 36.5 21.875C34.8431 21.875 33.5 23.2181 33.5 24.875C33.5 26.5319 34.8431 27.875 36.5 27.875Z'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+  <path
+    d='M8.5 27.875C10.1569 27.875 11.5 26.5319 11.5 24.875C11.5 23.2181 10.1569 21.875 8.5 21.875C6.84315 21.875 5.5 23.2181 5.5 24.875C5.5 26.5319 6.84315 27.875 8.5 27.875Z'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+  <path
+    d='M19.5 24.875H25.5'
+    stroke='#3483FA'
+    stroke-miterlimit='10'
+    stroke-linecap='square'
+  />
+</svg>

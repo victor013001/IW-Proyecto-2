@@ -1,0 +1,32 @@
+<svg
+  width="45"
+  height="40"
+  viewBox="0 0 31 46"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0.5 10.875H30.5"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M0.5 32.875H30.5"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M26.5 44.875H4.5C2.291 44.875 0.5 43.084 0.5 40.875V4.875C0.5 2.666 2.291 0.875 4.5 0.875H26.5C28.709 0.875 30.5 2.666 30.5 4.875V40.875C30.5 43.084 28.709 44.875 26.5 44.875Z"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+  <path
+    d="M13.5 5.875H17.5"
+    stroke="#3483FA"
+    stroke-miterlimit="10"
+    stroke-linecap="square"
+  />
+</svg>
