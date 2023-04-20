@@ -3,27 +3,27 @@ import { CardBeneficions } from '@components/cardBeneficions';
 const cardBeneficiosInfo = {
   cards: [
     {
-      backImage: '/../public/media/homero.png',
+      backImage: '/media/homero.png',
       backName: 'películas-disney+star+',
-      forwardImage: '/../public/media/disney-star.png',
+      forwardImage: '/media/disney-star.png',
       forwardName: 'disney+',
       text1: '',
       text2: 'Sin cargo con el nivel 6',
       text3: 'Diseny+ y Star+',
     },
     {
-      backImage: '/../public/media/hbo.png',
+      backImage: '/media/hbo.png',
       backName: 'películas-hbo-max',
-      forwardImage: '/../public/media/hbo-max.png',
+      forwardImage: '/media/hbo-max.png',
       forwardName: 'hbo-max',
       text1: '7 DÍAS GRATIS',
       text2: 'Hasta 50% OFF',
       text3: 'HBO Max',
     },
     {
-      backImage: '/../public/media/tom.png',
+      backImage: '/media/tom.png',
       backName: 'películas-paramount+',
-      forwardImage: '/../public/media/paramount.png',
+      forwardImage: '/media/paramount.png',
       forwardName: 'paramount+',
       text1: '7 DÍAS GRATIS',
       text2: 'Hasta 50% OFF',
