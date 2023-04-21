@@ -6,12 +6,11 @@ interface OfertaProps {
   promo: string;
 }
 
-
 const Oferta = ({imagen, precio, descuento, promo} : OfertaProps) => {
   return (
     <div className='flex flex-col w-[224px] h-[350px] rounded bg-white'>
       <div className='border w-[224px] h-[224px]'>
-        <span>{imagen}</span>
+        <img src={imagen}/>
       </div>
       <div className='p-5'>
         <span className='mr-3 text-2xl font-normal'>${precio}</span>
