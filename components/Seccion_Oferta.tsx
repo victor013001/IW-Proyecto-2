@@ -1,25 +1,25 @@
 import { use, useState } from 'react';
 
-const Seccion_Oferta = () => {
+const SeccionOferta = () => (
     <section className='flex justify-center items-center'>
-        <div className='w-[996px] h-[420px] justify-between'>
+        <div className='w-[996px] h-[420px] justify-between mb-8'>
             <div className='mb-4 mt-6'>
                 <span className='font-light text-2xl mr-4 text-ml-gray'>Ofertas</span>
                 <span className='text-ml-blue'>Ver todas</span>
             </div>
-            <div className='lg:flex flex-row gap-3 justify-center items-center'>
+            <div className='hidden lg:flex flex-row gap-3 justify-center items-center'>
                 <CardOferta1 />
                 <CardOferta2 />
                 <CardOferta3 />
                 <CardOferta4 />
                 <CardOferta5 />
             </div>
-        </div>
-        <div className='flex py-4 lg:hidden'>
-            <Carousel />
+            <div className='py-4 lg:hidden'>
+                <Carousel />
+            </div>
         </div>
     </section>
-};
+);
 
 interface OfertaProps {
     imagen: string;
@@ -148,4 +148,4 @@ const Carousel = () => {
 }
 
 
-export {Seccion_Oferta}
+export {SeccionOferta}
