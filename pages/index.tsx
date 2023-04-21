@@ -23,7 +23,19 @@ const Home: NextPage = () => (
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link rel='icon' href='/favicon.svg' />
     </Head>
-    <div className='text-3xl font-bold underline'>Proyecto 2</div>
+    <CartContextProvider>
+      <Layout>
+        <BannerHeader />
+        <SeccionMedioPagos />
+        <Seccion_Oferta />
+        <DisneySuscribe></DisneySuscribe>
+        <Beneficios />
+        <Stores />
+        <Categories />
+        <ShoppingInfo />
+      </Layout>
+      <ModalCart />
+    </CartContextProvider>
   </>
 );
 
