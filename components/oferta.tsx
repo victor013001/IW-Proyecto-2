@@ -1,16 +1,15 @@
 
 interface OfertaProps {
-  children: JSX.Element;
   imagen: string;
   precio: string;
   descuento: string;
   promo: string;
 }
 
-const Oferta = ({children,imagen, precio, descuento, promo} : OfertaProps) => {
+const Oferta = ({imagen, precio, descuento, promo} : OfertaProps) => {
   return (
     <div className='absoluteflex flex-col w-[190px] h-[350px] rounded bg-white'>
-      <div>{children}</div>
+
       <div className='border w-[190px] h-[224px]'>
         <img src={imagen}/>
       </div>
