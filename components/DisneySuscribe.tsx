@@ -3,7 +3,7 @@ import { Button } from "@mui/material"
 const DisneySuscribe = () => {
   return (
     <section className="flex justify-center items-center">
-    <div className='items-center w-[1184px] h-[340px] bg-white rounded-md'>
+    <div className='items-center w-[996px] h-[340px] bg-white rounded-md'>
       <div className=' flex flex-row justify-between items-center h-[87px] header-sub-color'>
         <div className="text-white text-lg">
           <span className='m-12 font-bold lg:m-6'>Suscríbete al nivel 6 </span>
