@@ -3,17 +3,13 @@ import { Oferta } from './oferta'
 import 'react-multi-carousel/lib/styles.css'
 
 const responsive = {
-    superLargeDesktop: {
+    desktop: {
         breakpoint: { max:3000, min:1024},
         items: 5
       },
-    desktop: {
-      breakpoint: { max: 1024, min: 768},
-      items: 3
-    },
     tablet: {
       breakpoint: { max:768, min:425},
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max:425, min: 0 },
@@ -24,7 +20,7 @@ const responsive = {
 const MyCarousel = () => {
   return (
         <section className='flex justify-center items-center'>
-            <div className='w-[224px] md:w-[996px]'>
+            <div className='w-[250px] lg:w-[996px]'>
             <Carousel responsive={responsive}>
                 <Oferta imagen='./media/silla_oferta.png' precio='210.000' descuento='32' promo='Envío gratis'></Oferta>
                 <Oferta imagen='./media/micro_oferta.png' precio='74.990' descuento='25' promo='Envío gratis FULL'></Oferta>

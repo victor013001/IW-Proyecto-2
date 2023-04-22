@@ -14,6 +14,7 @@ const SeccionOferta = () => {
             </div>
             <MyCarousel></MyCarousel>
         </div>
+        
     </section>
   )
 }

@@ -25,11 +25,11 @@ const DisneySuscribe = () => {
               <img src='./disney+.png' />
               <span>Disney+ sin cargo</span>
             </div>
-            <div className='hidden w-[377px] gap-4 md:flex flex-row justify-center items-center'>
+            <div className='hidden w-[377px] gap-4 lg:flex flex-row justify-center items-center'>
               <img src='./star.png' />
               <span>Star+ sin cargo</span>
             </div>
-            <div className='hidden md:flex flex-row gap-5'>
+            <div className='hidden lg:flex flex-row gap-5'>
               <img src='./camion.png' />
               <div className=''>
                 <span>
