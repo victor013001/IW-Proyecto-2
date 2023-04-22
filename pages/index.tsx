@@ -9,6 +9,7 @@ import { Layout } from '@layouts/Layout';
 import { Beneficios } from '@components/Beneficios';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import {SeccionOferta} from '@components/Seccion_Oferta'
 import { SeccionMedioPagos } from '@components/SeccionMedioPagos';
 
 const Home: NextPage = () => (
@@ -26,6 +27,7 @@ const Home: NextPage = () => (
       <Layout>
         <BannerHeader />
         <SeccionMedioPagos />
+        <SeccionOferta />
         <DisneySuscribe></DisneySuscribe>
         <Beneficios />
         <Stores />
