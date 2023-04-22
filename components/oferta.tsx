@@ -13,9 +13,9 @@ interface OfertaProps {
 
 const Oferta = ({nombre,imagen, precio, descuento, promo} : OfertaProps) => {
   
-  const { setOpenCart, numberOfItemsInCart, addToCart } = useCartContext();
+  const { setOpenCart, addToCart } = useCartContext();
 
-  const precioEnNumber = Number(precio)
+  const precioEnNumber = Number(precio.replaceAll('.',''))
 
   function addToCartTest() {
     addToCart({
