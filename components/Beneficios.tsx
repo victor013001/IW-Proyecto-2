@@ -45,9 +45,9 @@ const Beneficios = () => (
           </span>
         </div>
         <div className='flex gap-4 pr-2 pl-2 flex-col lg:flex-row'>
-          {cardBeneficiosInfo.cards.map((card, index) => (
+          {cardBeneficiosInfo.cards.map((card) => (
             <CardBeneficions
-              key={`${card.forwardName}_${index}`}
+              key={`card_${card.forwardName}`}
               backImage={card.backImage}
               backName={card.backName}
               forwardImage={card.forwardImage}

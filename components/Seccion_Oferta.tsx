@@ -1,11 +1,8 @@
 import React from 'react'
-import { MyCarousel } from './MyCarousel'
+import { MyCarousel } from '@components/MyCarousel'
 
 
-const SeccionOferta = () => {
-  
- 
-  return (
+const SeccionOferta = () => (
     <section className='flex justify-center items-center'>
         <div className='w-[996px] h-[420px] justify-between mb-8'>
             <div className='mb-4 mt-6'>
@@ -17,7 +14,6 @@ const SeccionOferta = () => {
         
     </section>
   )
-}
 
 export {SeccionOferta}
 

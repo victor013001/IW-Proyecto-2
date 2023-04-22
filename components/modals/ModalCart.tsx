@@ -1,5 +1,5 @@
 import { useCartContext } from '@context/CartContext';
-import { Modal } from './Modal';
+import { Modal } from '@modals/Modal';
 import { AiFillDelete } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 
