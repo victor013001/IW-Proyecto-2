@@ -10,7 +10,7 @@ const Oferta = ({imagen, precio, descuento, promo} : OfertaProps) => {
   return (
     <div className='absoluteflex flex-col w-[190px] h-[350px] rounded bg-white'>
       <div className='border w-[190px] h-[224px]'>
-        <img src={imagen}/>
+        <img src={imagen} width={224} height={224}/>
       </div>
       <div className='p-5'>
         <span className='mr-3 text-xl font-normal'>${precio}</span>
