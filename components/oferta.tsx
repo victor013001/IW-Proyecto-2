@@ -1,12 +1,31 @@
+import { useCartContext } from '@context/CartContext';
+import { Button } from '@mui/material';
 
 interface OfertaProps {
+  nombre: string;
   imagen: string;
   precio: string;
   descuento: string;
   promo: string;
 }
 
-const Oferta = ({imagen, precio, descuento, promo} : OfertaProps) => {
+
+
+const Oferta = ({nombre,imagen, precio, descuento, promo} : OfertaProps) => {
+  
+  const { setOpenCart, numberOfItemsInCart, addToCart } = useCartContext();
+
+  const precioEnNumber = Number(precio)
+
+  function addToCartTest() {
+    addToCart({
+      name: nombre,
+      price: precioEnNumber,
+      quantity: 1,
+    });
+    setOpenCart(true);
+  }
+
   return (
     <div className='absoluteflex flex-col w-[190px] h-[350px] rounded bg-white'>
       <div className='border w-[190px] h-[224px]'>
@@ -19,7 +38,9 @@ const Oferta = ({imagen, precio, descuento, promo} : OfertaProps) => {
           <span className='text-sm font-bold text-ml-green'>{promo}</span>
         </div>
       </div>
-      
+      <div className='flex justify-end'>
+        <Button variant='text' onClick={addToCartTest}>+</Button>
+      </div>
     </div>
   )
 }
