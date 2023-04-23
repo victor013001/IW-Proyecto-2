@@ -21,16 +21,14 @@ const CardBeneficions = ({backImage, backName, forwardName, forwardImage, text1,
         />
         <div className='debug flex -mt-20 pl-4 gap-4 h-[60px]'>
           <Image src={forwardImage} alt={forwardName} width={60} height={60} />
-          <div className='flex flex-col gap-[5px] pt-[5px] pb-[15px]'>
+          <div className='flex flex-col gap-[5px] pt-[5pNamex] pb-[15px]'>
             <span className='font-sans text-white text-xs'>{text1}</span>
             <span className='font-sans text-white text-xs'>{text2}</span>
             <span className='font-sans text-white text-xs'>{text3}</span>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   );
-
-
 
 export {CardBeneficions};
