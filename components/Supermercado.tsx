@@ -40,7 +40,7 @@ const imagesSupermercado = {
 const Supermercado = () => (
   <>
     <section className='w-screen flex justify-center items-center '>
-      <div className='flex flex-col gap-6 w-[1024px]'>
+      <div className='flex flex-col w-[320px] gap-6 lg:w-[1024px]'>
         <div className='w-full flex  flex-col lg:flex-row gap-2 '>
           <span className='text-2xl text-ml-gray'>Colecciones:</span>
           <span className='text-2xl text-ml-gray font-bold'>Supermercado</span>
